@@ -1,0 +1,163 @@
+==> bsd/sys/mips/drivers/xlr/xlr_tlb.c
+    [b5389751be919d1e94ed77886fe50b51]
+    | 123: #define MIPS_COP_0_CAUSE_REG    $13
+    | 124: #define MIPS_COP_0_STATUS       $12
+    | 125: #define MIPS_COP_0_CAUSE        $13
+==> bsd/sys/mips/include/rm7000.h
+    [0086f6e8f65b479736130a20d7d417e6]
+    | 76: #define	PCNT_SRC_MULSTALL	0x1d	/* Multiplier stall cycles  */
+    | 77: #define	PCNT_SRC_ELDSTALL	0x1d	/* Excepion stall due to non-b ld */
+==> bsd/sys/mips/include/sg/sg_debug.h
+    [0c26cfa98670d77e522b5256cc17dc9d]
+    | 292: #define MSP_DBG_IOCTL_MSP_XLR_PERF_SM _IOWR('z', 206, uintptr_t)
+    | 295: #define MSP_DBG_IOCTL_LOCAL_JFRAME_32    _IOWR('z', 205, u_int32_t)
+    | 296: #define MSP_DBG_IOCTL_MSP_XLR_PERF_SM_32 _IOWR('z', 206, u_int32_t)
+==> gpl-dist/rsync/zlib/trees.h
+    [11b1933ea8ccf8247072a0bce77be7c0]
+    | 79: 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13,
+    | 80: 13, 13, 13, 13, 13, 13, 13, 13, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14,
+    | 81: 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14,
+    | 82: 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14,
+    | 83: 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 15, 15, 15, 15, 15, 15, 15, 15,
+    | 84: 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15,
+    | 85: 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15,
+    | 86: 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15,  0,  0, 16, 17,
+    | 111: 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25,
+    | 112: 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 26, 26, 26, 26, 26, 26, 26, 26,
+    | 113: 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26,
+    | 114: 26, 26, 26, 26, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27, 27,
+==> junos/bsd/sys/net/if_ipipsubr.c
+    [7d8d0c238edd5f85aadbe6167a2cd49f]
+    | 1538:                   ip6_tun_rtprefix[8] = 0;
+    | 1539:                   *(u_int8_t *)&ip6_tun_rtprefix[8] = IPPROTO_IPV6;
+    | 2478:     prefix[8] = 0;
+    | 2479:     *(u_int8_t *)&prefix[8] = ip->ip6_nxt;
+==> junos/usr.sbin/cfmd/cfmd_session.c
+    [ebd1c11c182f00398273cdaab2a1d97f]
+    | 5459:      cfmd_session_trace("%s: [4]: %s, [5]:%s, [6]:%s [7]:%s ", __FUNCTION__,
+    | 5460:                         cfmd_fwf_action2str(actions[4]), 
+    | 5472:      cfmd_session_trace("%s: [4]: %s, [5]:%s, [6]:%s [7]:%s ", __FUNCTION__,
+    | 5473:                         cfmd_fwf_action2str(out_actions[4]), 
+    | 5485:      cfmd_session_trace("%s: [4]: %s, [5]:%s, [6]:%s [7]:%s ", __FUNCTION__,
+    | 5486:                         cfmd_fwf_action2str(lt_actions[4]), 
+    | 5498:      cfmd_session_trace("%s: [4]: %s, [5]:%s, [6]:%s [7]:%s ", __FUNCTION__,
+    | 5499:                         cfmd_fwf_action2str(lt_out_actions[4]), 
+    | 5604:     cfmd_session_trace("%s: [4]: %s, [5]:%s, [6]:%s [7]:%s ",
+    | 5606:                        cfmd_fwf_action2str(actions[4]),
+    | 5618:     cfmd_session_trace("%s: [4]: %s, [5]:%s, [6]:%s [7]:%s ",
+    | 5620:                        cfmd_fwf_action2str(lt_actions[4]),
+    | 5763:     cfmd_session_trace("%s: [4]: %s, [5]:%s, [6]:%s [7]:%s ",
+    | 5765:                        cfmd_fwf_action2str(actions[4]),
+    | 5777:     cfmd_session_trace("%s: [4]: %s, [5]:%s, [6]:%s [7]:%s ",
+    | 5779:                        cfmd_fwf_action2str(lt_actions[4]),
+    | 6077:     cfmd_session_trace("%s: [4]: %s, [5]:%s, [6]:%s [7]:%s ",
+    | 6079:                        cfmd_fwf_action2str(actions[4]),
+    | 6091:     cfmd_session_trace("%s: [4]: %s, [5]:%s, [6]:%s [7]:%s ",
+    | 6093:                        cfmd_fwf_action2str(lt_actions[4]),
+==> pfe-shared/include/jnx/svcs/cookie.h
+    [e30aa02748f60a9583b8ee84107a6c0f]
+    | 333: #define GSP_SVC_REQ_GGSN                0x48
+    | 334: #define GSP_SVC_REQ_IRI1                0x48   /* Overloading for MP-SDK IRI traffic */
+    | 337: #define GSP_SVC_REQ_MSP                 0x4B
+    | 338: #define GSP_SVC_REQ_LAYER3_HA           0x4B   /* Overload for Layer3-ukern HA traffic */
+==> pfe-shared/include/jnx/xlr/xlr_fmn.h
+    [7b79b879393802cc4c73e675e9dbc1d5]
+    | 76: #define XLR_FMN_STNID_XGS1_TX			    80  
+    | 77: #define XLR_FMN_STNID_XMAC1_00_TX                   80
+==> pfe-shared/ipc/jnx/ipc_cm.h
+    [bcb87691d8faa0ecd16ce78b86fdc200]
+    | 4127: #define CM_FEB_RDD_FPC_TYPE_OC192_CFPC 5
+    | 4129: #define CM_FEB_RDD_MAX_FPCS_PER_FEB 2
+==> pfe/common/applications/cmg/cmstoli_fabinit_stfpc.c
+    [7bb6f91f84b75fde5c9752e95e8af356]
+    | 537:             err |= hsl2_set_chan_mode(asic_id, tx_chan + 5, CHAN_IS_HYBRID_MODE);
+    | 538:             err |= hsl2_set_chan_mode(asic_id, rx_chan + 3, CHAN_IS_HYBRID_MODE);
+    | 539:             err |= hsl2_set_chan_mode(asic_id, rx_chan + 4, CHAN_IS_HYBRID_MODE);
+    | 540:             err |= hsl2_set_chan_mode(asic_id, rx_chan + 5, CHAN_IS_HYBRID_MODE);
+==> pfe/common/applications/mobile-edge/me_stats_agent_parser.c
+    [fc20d9eaec95b5ef8ada889f798d3b38]
+    | 5321:         num_triggers    = PARSER_RESGET(result, 5, unsigned_number);
+    | 5323:         first_pkt_ts    = PARSER_RESGET(result, 4, unsigned_number);
+==> pfe/common/applications/route/rt_jtree_ij.c
+    [680043868703a437c1b69eb2a7703eba]
+    | 5963:                     SET_HASH_BYTES_FOR_ICHIP(5,JTREE_MS_HSH2_DA_IP_L2_BRIDGE, 2,
+    | 5967:                     SET_HASH_BYTES_FOR_ICHIP(4,JTREE_MS_HSH2_SA_IP_L2_BRIDGE, 2,
+==> pfe/common/applications/svcs/fwnat/fwnat_iiop.c
+    [7edef780fb253a464e50f62b6e1ef665]
+    | 112: #define IIOP_MAX_PENDING_REQUESTS         4
+    | 114: #define ALIGN4                            3
+==> pfe/common/drivers/cxp/cxp_memmap.h
+    [e74e7ab6783b7cd08c951bbd8f31df81]
+    | 720: #define CXP_TXRX_OPT_LASER_WLENGTH_OFFSET   (0x87)
+    | 721: #define CXP_TXRX_CU_ATTENUATION_OFFSET      (0x87)
+    | 724: #define CXP_TXRX_OPT_MAX_WLENGTH_DEV_OFFSET (0x89)
+    | 725: #define CXP_TXRX_CU_ATTENUATION_EXT_OFFSET  (0x89)
+==> pfe/common/drivers/ezchip/xeth/ucode-a/xeth_common.h
+    [27e503d5dd19fbf413dca99779ee046e]
+    | 35: #define XETH_DBG_LEVEL_DEBUG		5
+    | 36: #define XETH_DBG_LEVEL_ENABLE_ALL	5
+==> pfe/common/drivers/ezchip/xeth/ucode/xeth_common.h
+    [747995f455acaabae4f862baf782b289]
+    | 35: #define XETH_DBG_LEVEL_DEBUG		5
+    | 36: #define XETH_DBG_LEVEL_ENABLE_ALL	5
+==> pfe/common/drivers/ezchip/xeth/ucode/xeth_data_structure.h
+    [034a2a151d1645175a8192990951fd3d]
+    | 1490: #define VLAN_VCI_IWF_RES_VLAN_RW_CTRL_OFF           14
+    | 1492: #define VLAN_VCI_IWF_RES_SERV_ID_BIT_SIZE           12
+==> pfe/common/drivers/ichip/include/ichip_iwi_ucode_asm.h
+    [fbd470eca6a318a705630138302ea544]
+    | 1146: #define RB_L2_BRG_CONTROL_BYTE              5:0
+    | 1147: #define RB_L2_BRG_OAM_BITS                  5:8
+    | 1148: #define RB_L2_BRG_CE_PE_MULTI_PKT           5:15
+    | 1149: #define RB_L2_BRG_ETH_TYPE                  5:16
+    | 1152: #define RB_L2_BRG_LEARN_VLAN                8:0
+    | 1153: #define RB_L2_BRG_LEARN_VLAN_1P_BITS        8:12
+    | 1154: #define RB_L2_BRG_USER_VLAN                 8:16 
+    | 1155: #define RB_L2_BRG_IP_TOS                    9:0
+    | 1156: #define RB_L2_BRG_IP_TRAF_CLASS             9:0
+    | 1157: #define RB_L2_BRG_IP_PROTO                  9:8
+    | 1158: #define RB_L2_BRG_IP_NEXT_HEADER            9:8
+    | 1159: #define RB_L2_BRG_IP_IGMP_TYPE_CODE         9:16
+==> pfe/common/drivers/ixchip/priv_ix.h
+    [8f6390091d207404fb0c39190ab4cb2c]
+    | 1118: #define IX_ENG_GENERIC_COUNTER_7   7
+    | 1121: #define IX_ENG_WORDS_PER_UINST      5
+==> pfe/common/drivers/t5e-pic/t5e_gn2405.c
+    [0c70a3cf646e7211c7e6ec8929a82b71]
+    | 64:     {5, T5E_GN_TX_DONE_REG},   /* GN8 */
+    | 65:     {3, T5E_GN_RX_DONE_REG},   /* GN9 */
+    | 66:     {4, T5E_GN_RX_DONE_REG},   /* GN10 */
+    | 67:     {5, T5E_GN_RX_DONE_REG}    /* GN11 */
+==> pfe/common/drivers/xeth/xeth_ifd_pfe.c
+    [5ca907f6c28df9b82666dcdcae4e133e]
+    | 2817:                            " TPID[6] 0x%04x TPID[7] 0x%04x\n",
+    | 2818:                            xeth_esw_ioctl->tpid[4],
+    | 2819:                            xeth_esw_ioctl->tpid[5],
+    | 2820:                            xeth_esw_ioctl->tpid[6],
+==> pfe/common/pfe-arch/mtj/applications/route/rt_jtree_ij.c
+    [46baaa7dfcb902cc1dcb6c43b130e500]
+    | 6576:                     SET_HASH_BYTES_FOR_ICHIP(5,JTREE_MS_HSH2_DA_IP_L2_BRIDGE, 2,
+    | 6580:                     SET_HASH_BYTES_FOR_ICHIP(4,JTREE_MS_HSH2_SA_IP_L2_BRIDGE, 2,
+==> pfe/common/pfe-arch/mtj/toolkits/topo/topo_abc.c
+    [05268ca96606d3b46ccc40026ab797bd]
+    | 22: const int8_t topo_offset_da        = 8;   /* destination address */
+    | 23: const int8_t topo_offset_mda       = 8;   /* ether mac destination address */
+==> pfe/common/pfe-arch/trinity/toolkits/jnh/jnh_public.h
+    [fccfb66382b45971eb44cceb968f5584]
+    | 2567: #define RTT_MAX_INDIRECT_RESULTS           4
+    | 2571: #define RTT_MAX_INDIRECT_RESULTS_DEFAULT   2  
+==> pfe/common/pfe-arch/trinity/toolkits/jnh/jnh_ucode_defines.h
+    [1bd0d17bf27f1efc7f9b646af55a6154]
+    | 434: #define JNH_BUFFER_BIT_OP_SUB1     6    /* field = field - data */
+    | 435: #define JNH_BUFFER_BIT_OP_SUB2     5    /* field = data - field */
+==> pfe/common/toolkits/jtree/jtree_ij.h
+    [177bd23a8f28992be4c63033361d5f7c]
+    | 30: #define JT_NH_EXTENDED                 (7 << JT_NH_TYPE_SHIFT)
+    | 32: #define JT_NH_TYPE_MASK                (7 << JT_NH_TYPE_SHIFT)
+==> vendor/zarlink/zl303xx/zlPtp/include/zl303xx_PtpConstants.h
+    [5f1142d26d77757ddce58b1375470328]
+    | 615:    Q_TIMER                 = 4,  /* For version 1 only. Used for delay request timing (as per spec) */
+    | 616:    DELAY_REQ_TIMER         = 4,  /* For version 2 only */
+    | 617:    UNICAST_DELAY_RESPONSE_TIMER = 4, /* For version 2, unicast negotiation only */
+    | 618:    SYNC_BURST_DELAY_TIMER  = 5,  /* For version 1 only. Used for sync bursts */
+    | 619:    UNICAST_QUERY_INTERVAL  = 5,  /* version 2 unicast negotiation only */

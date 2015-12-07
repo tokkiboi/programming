@@ -1,0 +1,4 @@
+First we saw that a string is represented as characters in an array of one dimension.  Each character within the string will be 
+stored within one element of the array.  Some problems require that the characters within a string be processed individually. 
+However, there are many other problems where treating them as complete entities is much simpler.  The string library functions
+make this much easier
