@@ -5,7 +5,7 @@
             "type": "cppdbg",
             "request": "launch",
             //"program": "${fileDirname}/${fileBasenameNoExtension}",
-            "program": "${workspaceRoot}/a.out"
+            "program": "${fileDirname}/${fileBasenameNoExtension}/debug/a.out"
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
