@@ -22,7 +22,7 @@
             "intelliSenseMode": "windows-gcc-x64"
           },
           {
-            "name": "Linux",
+            "name": "Linux2",
             "includePath": ["${workspaceFolder}/**"],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
