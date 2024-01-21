@@ -1,19 +1,19 @@
 MONTHLY COST OF HOUSE
 
-SELLING PRICE                                $    11.50
-DOWN PAYMENT                                       2.30
-AMOUNT OF LOAN                                     9.20
-INTEREST RATE                                     11.5%
+SELLING PRICE                                $ 12421.00
+DOWN PAYMENT                                    2484.20
+AMOUNT OF LOAN                                  9936.80
+INTEREST RATE                                    124.0%
 TAX RATE                                           1.2%
-DURATION OF LOAN (YEARS)                              3
+DURATION OF LOAN (YEARS)                            124
 
 MONTHLY PAYMENT
-     MORTGAGE                                      0.30
+     MORTGAGE                                   1026.80
      UTILITIES                                   300.00
-     PROPERTY TAXES                                0.14
+     PROPERTY TAXES                              155.26
      INSURANCE                                   550.00
                                               _________
-                                             $   850.45
+                                             $  2032.07
 Student Name:	Alex Kim
 E-mail:		alexkim80@gmail.com
 Program:	Lab #5 - Monthly House Costs
