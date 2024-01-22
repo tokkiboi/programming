@@ -34,19 +34,22 @@ cout << "Enter the number of years for the loan: ";
     cin >> numYear;
     return;}
 
-int main(){
+int main()
+{
     int num_of_years;
     double sell_price,interest_rate,loaner,mortgagePayment,d_payment,property_tax;
     const double downpayrate=0.2;
 
-	fstream myfile;
-myfile.open("lab5_output.txt");
-
+    fstream myfile;
+    myfile.open("lab5_output.txt");
+    {
     input_data(sell_price,interest_rate,num_of_years);
     calc(sell_price,interest_rate,num_of_years,loaner,mortgagePayment,d_payment,downpayrate,property_tax);
     output_data(sell_price,interest_rate,num_of_years,loaner,mortgagePayment,d_payment,downpayrate,property_tax);
+    myfile.close();}
 return 0;
 }
+
 
 void calc(double s_price,double i_rate,int numOfYears, double& loan,double& mortgagePayment,double& dPayment,double dpay_rate,double& p_tax){
     p_tax=s_price*TAX_RATE;
@@ -76,20 +79,20 @@ string fill=" ";
 string fill2="_________";
 fstream myfile;
 myfile.open ("lab5_output.txt",fstream::out);
-myfile << "MONTHLY COST OF HOUSE" << endl << endl;
-myfile << setw(30) << left << "SELLING PRICE" << setw(15) << fill << "$" << setw(9) << setprecision(2) << fixed << right << sellPrice << endl;
-myfile << setw(30) << left << "DOWN PAYMENT" << setw(15) << fill << setw(10) << right << dPayment << endl;
-myfile << setw(30) << left << "AMOUNT OF LOAN" << setw(15) << fill << setw(10) << right << loanamt << endl;
-myfile << setw(30) << left << "INTEREST RATE" << setw(15) << fill << setw(9) << setprecision(1) << right << intRate*100.0 << "%" << endl;
-myfile << setw(30) << left << "TAX RATE" << setw(15) << fill << setw(9) << setprecision(1) << right << TAX_RATE * 100.0 << "%"<< endl;
-myfile << setw(30) << left << "DURATION OF LOAN (YEARS)" << setw(15) << fill << setw(10) << right << numberOfYears << endl << endl;
-myfile << "MONTHLY PAYMENT\n";
-myfile << setw(5) << fill << setw(25) << left << "MORTGAGE" << setw(17) << fill << setw(8) << setprecision(2) << fixed << right << mortgagePayment << endl;
-myfile << setw(5) << fill << setw(25) << left << "UTILITIES" << setw(17) << fill << setw(8) << setprecision(2) << fixed << right << UTILITIES << endl;
-myfile << setw(5) << fill << setw(25) << left << "PROPERTY TAXES" << setw(17) << fill << setw(8) << setprecision(2) << fixed << right << prop_tax << endl;
-myfile << setw(5) << fill << setw(25) << left << "INSURANCE" << setw(17) << fill << setw(8) << setprecision(2) << fixed << right << INSURANCE_COST << endl;
-myfile << setw(46) << fill << setw(9) << fill2 << endl;
-myfile << setw(45) << fill << "$ " << setw(8) << setprecision(2) << fixed << right << (mortgagePayment+UTILITIES+prop_tax+INSURANCE_COST) << endl;
+cout << "MONTHLY COST OF HOUSE" << endl << endl;
+cout << setw(30) << left << "SELLING PRICE" << setw(15) << fill << "$" << setw(9) << setprecision(2) << fixed << right << sellPrice << endl;
+cout << setw(30) << left << "DOWN PAYMENT" << setw(15) << fill << setw(10) << right << dPayment << endl;
+cout << setw(30) << left << "AMOUNT OF LOAN" << setw(15) << fill << setw(10) << right << loanamt << endl;
+cout << setw(30) << left << "INTEREST RATE" << setw(15) << fill << setw(9) << setprecision(1) << right << intRate*100.0 << "%" << endl;
+cout << setw(30) << left << "TAX RATE" << setw(15) << fill << setw(9) << setprecision(1) << right << TAX_RATE * 100.0 << "%"<< endl;
+cout << setw(30) << left << "DURATION OF LOAN (YEARS)" << setw(15) << fill << setw(10) << right << numberOfYears << endl << endl;
+cout << "MONTHLY PAYMENT\n";
+cout << setw(5) << fill << setw(25) << left << "MORTGAGE" << setw(17) << fill << setw(8) << setprecision(2) << fixed << right << mortgagePayment << endl;
+cout << setw(5) << fill << setw(25) << left << "UTILITIES" << setw(17) << fill << setw(8) << setprecision(2) << fixed << right << UTILITIES << endl;
+cout << setw(5) << fill << setw(25) << left << "PROPERTY TAXES" << setw(17) << fill << setw(8) << setprecision(2) << fixed << right << prop_tax << endl;
+cout << setw(5) << fill << setw(25) << left << "INSURANCE" << setw(17) << fill << setw(8) << setprecision(2) << fixed << right << INSURANCE_COST << endl;
+cout << setw(46) << fill << setw(9) << fill2 << endl;
+cout << setw(45) << fill << "$ " << setw(8) << setprecision(2) << fixed << right << (mortgagePayment+UTILITIES+prop_tax+INSURANCE_COST) << endl;
 signature();
 myfile.close();}
 
@@ -99,9 +102,9 @@ myfile.open("lab5_output.txt",fstream::app);
 string position1="Student Name:\t";
 string position2="E-mail:\t\t";
 string position3="Program:\t";
-myfile << position1+"Alex Kim" << endl;
-myfile << position2+"alexkim80@gmail.com" << endl;
-myfile << position3+"Lab #5 - Monthly House Costs" << endl;
+cout << position1+"Alex Kim" << endl;
+cout << position2+"alexkim80@gmail.com" << endl;
+cout << position3+"Lab #5 - Monthly House Costs" << endl;
 myfile.close();
 }
 
